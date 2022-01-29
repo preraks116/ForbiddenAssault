@@ -1,0 +1,9 @@
+/home/prerak/IIIT/cg/ass1/2DGame/build/CMakeFiles/game.dir
+/home/prerak/IIIT/cg/ass1/2DGame/build/CMakeFiles/glad.dir
+/home/prerak/IIIT/cg/ass1/2DGame/build/CMakeFiles/edit_cache.dir
+/home/prerak/IIIT/cg/ass1/2DGame/build/CMakeFiles/rebuild_cache.dir
+/home/prerak/IIIT/cg/ass1/2DGame/build/libraries/glfw/CMakeFiles/edit_cache.dir
+/home/prerak/IIIT/cg/ass1/2DGame/build/libraries/glfw/CMakeFiles/rebuild_cache.dir
+/home/prerak/IIIT/cg/ass1/2DGame/build/libraries/glfw/src/CMakeFiles/glfw.dir
+/home/prerak/IIIT/cg/ass1/2DGame/build/libraries/glfw/src/CMakeFiles/edit_cache.dir
+/home/prerak/IIIT/cg/ass1/2DGame/build/libraries/glfw/src/CMakeFiles/rebuild_cache.dir
