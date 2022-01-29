@@ -14,8 +14,8 @@ CMakeFiles/game.dir/src/game.cpp.o: \
  /usr/include/bits/wchar.h /usr/include/bits/stdint-intn.h \
  /usr/include/bits/stdint-uintn.h /usr/include/inttypes.h \
  /home/prerak/IIIT/cg/ass1/2DGame/libraries/glfw/include/GLFW/glfw3.h \
- /home/prerak/IIIT/cg/ass1/2DGame/include/resource_manager.h \
- /usr/include/c++/11.1.0/map /usr/include/c++/11.1.0/bits/stl_tree.h \
+ /home/prerak/IIIT/cg/ass1/2DGame/include/game_level.h \
+ /usr/include/c++/11.1.0/vector \
  /usr/include/c++/11.1.0/bits/stl_algobase.h \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -41,94 +41,43 @@ CMakeFiles/game.dir/src/game.cpp.o: \
  /usr/include/c++/11.1.0/ext/new_allocator.h /usr/include/c++/11.1.0/new \
  /usr/include/c++/11.1.0/bits/exception.h \
  /usr/include/c++/11.1.0/bits/memoryfwd.h \
- /usr/include/c++/11.1.0/bits/stl_function.h \
- /usr/include/c++/11.1.0/backward/binders.h \
+ /usr/include/c++/11.1.0/bits/stl_construct.h \
+ /usr/include/c++/11.1.0/bits/stl_uninitialized.h \
  /usr/include/c++/11.1.0/ext/alloc_traits.h \
  /usr/include/c++/11.1.0/bits/alloc_traits.h \
- /usr/include/c++/11.1.0/bits/stl_construct.h \
- /usr/include/c++/11.1.0/ext/aligned_buffer.h \
- /usr/include/c++/11.1.0/bits/node_handle.h \
- /usr/include/c++/11.1.0/bits/stl_map.h \
- /usr/include/c++/11.1.0/initializer_list /usr/include/c++/11.1.0/tuple \
- /usr/include/c++/11.1.0/utility \
- /usr/include/c++/11.1.0/bits/stl_relops.h /usr/include/c++/11.1.0/array \
- /usr/include/c++/11.1.0/bits/range_access.h \
- /usr/include/c++/11.1.0/bits/uses_allocator.h \
- /usr/include/c++/11.1.0/bits/invoke.h \
- /usr/include/c++/11.1.0/bits/stl_multimap.h \
- /usr/include/c++/11.1.0/bits/erase_if.h /usr/include/c++/11.1.0/string \
- /usr/include/c++/11.1.0/bits/stringfwd.h \
- /usr/include/c++/11.1.0/bits/char_traits.h \
- /usr/include/c++/11.1.0/bits/postypes.h /usr/include/c++/11.1.0/cwchar \
- /usr/include/wchar.h /usr/include/bits/floatn.h \
- /usr/include/bits/floatn-common.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdarg.h \
- /usr/include/bits/types/wint_t.h /usr/include/bits/types/mbstate_t.h \
- /usr/include/bits/types/__mbstate_t.h /usr/include/bits/types/__FILE.h \
- /usr/include/bits/types/FILE.h /usr/include/bits/types/locale_t.h \
- /usr/include/bits/types/__locale_t.h /usr/include/c++/11.1.0/cstdint \
- /usr/include/c++/11.1.0/bits/localefwd.h \
- /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++locale.h \
- /usr/include/c++/11.1.0/clocale /usr/include/locale.h \
- /usr/include/bits/locale.h /usr/include/c++/11.1.0/iosfwd \
- /usr/include/c++/11.1.0/cctype /usr/include/ctype.h \
- /usr/include/bits/endian.h /usr/include/bits/endianness.h \
- /usr/include/c++/11.1.0/bits/ostream_insert.h \
- /usr/include/c++/11.1.0/bits/cxxabi_forced.h \
- /usr/include/c++/11.1.0/bits/basic_string.h \
- /usr/include/c++/11.1.0/ext/atomicity.h \
- /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/gthr.h \
- /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/gthr-default.h \
- /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/bits/types/time_t.h \
- /usr/include/bits/types/struct_timespec.h /usr/include/bits/sched.h \
- /usr/include/bits/types/struct_sched_param.h /usr/include/bits/cpu-set.h \
- /usr/include/time.h /usr/include/bits/time.h /usr/include/bits/timex.h \
- /usr/include/bits/types/struct_timeval.h \
- /usr/include/bits/types/clock_t.h /usr/include/bits/types/struct_tm.h \
- /usr/include/bits/types/clockid_t.h /usr/include/bits/types/timer_t.h \
- /usr/include/bits/types/struct_itimerspec.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/thread-shared-types.h \
- /usr/include/bits/pthreadtypes-arch.h /usr/include/bits/struct_mutex.h \
- /usr/include/bits/struct_rwlock.h /usr/include/bits/setjmp.h \
- /usr/include/bits/types/__sigset_t.h \
- /usr/include/bits/types/struct___jmp_buf_tag.h \
- /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/atomic_word.h \
- /usr/include/sys/single_threaded.h /usr/include/c++/11.1.0/string_view \
+ /usr/include/c++/11.1.0/bits/stl_vector.h \
+ /usr/include/c++/11.1.0/initializer_list \
+ /usr/include/c++/11.1.0/bits/stl_bvector.h \
  /usr/include/c++/11.1.0/bits/functional_hash.h \
  /usr/include/c++/11.1.0/bits/hash_bytes.h \
- /usr/include/c++/11.1.0/bits/ranges_base.h \
- /usr/include/c++/11.1.0/bits/string_view.tcc \
- /usr/include/c++/11.1.0/ext/string_conversions.h \
- /usr/include/c++/11.1.0/cstdlib /usr/include/stdlib.h \
- /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
- /usr/include/sys/types.h /usr/include/endian.h \
- /usr/include/bits/byteswap.h /usr/include/bits/uintn-identity.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/types/sigset_t.h /usr/include/alloca.h \
- /usr/include/bits/stdlib-float.h /usr/include/c++/11.1.0/bits/std_abs.h \
- /usr/include/c++/11.1.0/cstdio /usr/include/stdio.h \
- /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__fpos64_t.h \
- /usr/include/bits/types/struct_FILE.h \
- /usr/include/bits/types/cookie_io_functions_t.h \
- /usr/include/bits/stdio_lim.h /usr/include/c++/11.1.0/cerrno \
- /usr/include/errno.h /usr/include/bits/errno.h \
- /usr/include/linux/errno.h /usr/include/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /usr/include/bits/types/error_t.h \
- /usr/include/c++/11.1.0/bits/charconv.h \
- /usr/include/c++/11.1.0/bits/basic_string.tcc \
- /home/prerak/IIIT/cg/ass1/2DGame/include/texture.h \
- /home/prerak/IIIT/cg/ass1/2DGame/include/shader.h \
+ /usr/include/c++/11.1.0/bits/range_access.h \
+ /usr/include/c++/11.1.0/bits/vector.tcc \
  /home/prerak/IIIT/cg/ass1/2DGame/libraries/glm/glm/glm.hpp \
  /home/prerak/IIIT/cg/ass1/2DGame/libraries/glm/glm/detail/_fixes.hpp \
  /usr/include/c++/11.1.0/cmath /usr/include/math.h \
  /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
+ /usr/include/bits/floatn.h /usr/include/bits/floatn-common.h \
  /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
  /usr/include/bits/fp-fast.h \
  /usr/include/bits/mathcalls-helper-functions.h \
  /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
- /usr/include/bits/iscanonical.h /usr/include/c++/11.1.0/bits/specfun.h \
+ /usr/include/bits/iscanonical.h /usr/include/c++/11.1.0/bits/std_abs.h \
+ /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/bits/types/locale_t.h \
+ /usr/include/bits/types/__locale_t.h /usr/include/sys/types.h \
+ /usr/include/bits/types/clock_t.h /usr/include/bits/types/clockid_t.h \
+ /usr/include/bits/types/time_t.h /usr/include/bits/types/timer_t.h \
+ /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/bits/endianness.h /usr/include/bits/byteswap.h \
+ /usr/include/bits/uintn-identity.h /usr/include/sys/select.h \
+ /usr/include/bits/select.h /usr/include/bits/types/sigset_t.h \
+ /usr/include/bits/types/__sigset_t.h \
+ /usr/include/bits/types/struct_timeval.h \
+ /usr/include/bits/types/struct_timespec.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/bits/thread-shared-types.h \
+ /usr/include/bits/pthreadtypes-arch.h /usr/include/bits/struct_mutex.h \
+ /usr/include/bits/struct_rwlock.h /usr/include/alloca.h \
+ /usr/include/bits/stdlib-float.h /usr/include/c++/11.1.0/bits/specfun.h \
  /usr/include/c++/11.1.0/limits /usr/include/c++/11.1.0/tr1/gamma.tcc \
  /usr/include/c++/11.1.0/tr1/special_function_util.h \
  /usr/include/c++/11.1.0/tr1/bessel_function.tcc \
@@ -159,7 +108,8 @@ CMakeFiles/game.dir/src/game.cpp.o: \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/xmmintrin.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/mmintrin.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/mm_malloc.h \
- /usr/include/c++/11.1.0/stdlib.h \
+ /usr/include/c++/11.1.0/stdlib.h /usr/include/c++/11.1.0/cstdlib \
+ /usr/include/c++/11.1.0/cstdint \
  /home/prerak/IIIT/cg/ass1/2DGame/libraries/glm/glm/detail/type_float.hpp \
  /home/prerak/IIIT/cg/ass1/2DGame/libraries/glm/glm/detail/type_vec.hpp \
  /home/prerak/IIIT/cg/ass1/2DGame/libraries/glm/glm/detail/precision.hpp \
@@ -324,15 +274,73 @@ CMakeFiles/game.dir/src/game.cpp.o: \
  /home/prerak/IIIT/cg/ass1/2DGame/libraries/glm/glm/detail/func_integer.inl \
  /home/prerak/IIIT/cg/ass1/2DGame/libraries/glm/glm/detail/func_integer_simd.inl \
  /home/prerak/IIIT/cg/ass1/2DGame/libraries/glm/glm/detail/../simd/integer.h \
+ /home/prerak/IIIT/cg/ass1/2DGame/include/game_object.h \
+ /home/prerak/IIIT/cg/ass1/2DGame/include/texture.h \
+ /home/prerak/IIIT/cg/ass1/2DGame/include/sprite_renderer.h \
+ /home/prerak/IIIT/cg/ass1/2DGame/libraries/glm/glm/gtc/matrix_transform.hpp \
+ /home/prerak/IIIT/cg/ass1/2DGame/libraries/glm/glm/gtc/../gtc/constants.hpp \
+ /home/prerak/IIIT/cg/ass1/2DGame/libraries/glm/glm/gtc/../gtc/constants.inl \
+ /home/prerak/IIIT/cg/ass1/2DGame/libraries/glm/glm/gtc/matrix_transform.inl \
+ /home/prerak/IIIT/cg/ass1/2DGame/include/shader.h \
+ /usr/include/c++/11.1.0/string /usr/include/c++/11.1.0/bits/stringfwd.h \
+ /usr/include/c++/11.1.0/bits/char_traits.h \
+ /usr/include/c++/11.1.0/bits/postypes.h /usr/include/c++/11.1.0/cwchar \
+ /usr/include/wchar.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdarg.h \
+ /usr/include/bits/types/wint_t.h /usr/include/bits/types/mbstate_t.h \
+ /usr/include/bits/types/__mbstate_t.h /usr/include/bits/types/__FILE.h \
+ /usr/include/bits/types/FILE.h /usr/include/c++/11.1.0/bits/localefwd.h \
+ /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++locale.h \
+ /usr/include/c++/11.1.0/clocale /usr/include/locale.h \
+ /usr/include/bits/locale.h /usr/include/c++/11.1.0/iosfwd \
+ /usr/include/c++/11.1.0/cctype /usr/include/ctype.h \
+ /usr/include/c++/11.1.0/bits/ostream_insert.h \
+ /usr/include/c++/11.1.0/bits/cxxabi_forced.h \
+ /usr/include/c++/11.1.0/bits/stl_function.h \
+ /usr/include/c++/11.1.0/backward/binders.h \
+ /usr/include/c++/11.1.0/bits/basic_string.h \
+ /usr/include/c++/11.1.0/ext/atomicity.h \
+ /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/gthr.h \
+ /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h /usr/include/bits/sched.h \
+ /usr/include/bits/types/struct_sched_param.h /usr/include/bits/cpu-set.h \
+ /usr/include/time.h /usr/include/bits/time.h /usr/include/bits/timex.h \
+ /usr/include/bits/types/struct_tm.h \
+ /usr/include/bits/types/struct_itimerspec.h /usr/include/bits/setjmp.h \
+ /usr/include/bits/types/struct___jmp_buf_tag.h \
+ /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/atomic_word.h \
+ /usr/include/sys/single_threaded.h /usr/include/c++/11.1.0/string_view \
+ /usr/include/c++/11.1.0/bits/ranges_base.h \
+ /usr/include/c++/11.1.0/bits/string_view.tcc \
+ /usr/include/c++/11.1.0/ext/string_conversions.h \
+ /usr/include/c++/11.1.0/cstdio /usr/include/stdio.h \
+ /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__fpos64_t.h \
+ /usr/include/bits/types/struct_FILE.h \
+ /usr/include/bits/types/cookie_io_functions_t.h \
+ /usr/include/bits/stdio_lim.h /usr/include/c++/11.1.0/cerrno \
+ /usr/include/errno.h /usr/include/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/bits/types/error_t.h \
+ /usr/include/c++/11.1.0/bits/charconv.h \
+ /usr/include/c++/11.1.0/bits/basic_string.tcc \
  /home/prerak/IIIT/cg/ass1/2DGame/libraries/glm/glm/gtc/type_ptr.hpp \
  /home/prerak/IIIT/cg/ass1/2DGame/libraries/glm/glm/gtc/../gtc/quaternion.hpp \
- /home/prerak/IIIT/cg/ass1/2DGame/libraries/glm/glm/gtc/../gtc/../gtc/constants.hpp \
- /home/prerak/IIIT/cg/ass1/2DGame/libraries/glm/glm/gtc/../gtc/../gtc/constants.inl \
  /home/prerak/IIIT/cg/ass1/2DGame/libraries/glm/glm/gtc/../gtc/quaternion.inl \
  /home/prerak/IIIT/cg/ass1/2DGame/libraries/glm/glm/gtc/../gtc/quaternion_simd.inl \
  /usr/include/c++/11.1.0/cstring /usr/include/string.h \
  /usr/include/strings.h \
  /home/prerak/IIIT/cg/ass1/2DGame/libraries/glm/glm/gtc/type_ptr.inl \
- /home/prerak/IIIT/cg/ass1/2DGame/include/sprite_renderer.h \
- /home/prerak/IIIT/cg/ass1/2DGame/libraries/glm/glm/gtc/matrix_transform.hpp \
- /home/prerak/IIIT/cg/ass1/2DGame/libraries/glm/glm/gtc/matrix_transform.inl
+ /home/prerak/IIIT/cg/ass1/2DGame/include/resource_manager.h \
+ /usr/include/c++/11.1.0/map /usr/include/c++/11.1.0/bits/stl_tree.h \
+ /usr/include/c++/11.1.0/ext/aligned_buffer.h \
+ /usr/include/c++/11.1.0/bits/node_handle.h \
+ /usr/include/c++/11.1.0/bits/stl_map.h /usr/include/c++/11.1.0/tuple \
+ /usr/include/c++/11.1.0/utility \
+ /usr/include/c++/11.1.0/bits/stl_relops.h /usr/include/c++/11.1.0/array \
+ /usr/include/c++/11.1.0/bits/uses_allocator.h \
+ /usr/include/c++/11.1.0/bits/invoke.h \
+ /usr/include/c++/11.1.0/bits/stl_multimap.h \
+ /usr/include/c++/11.1.0/bits/erase_if.h \
+ /home/prerak/IIIT/cg/ass1/2DGame/include/resource_manager.h \
+ /home/prerak/IIIT/cg/ass1/2DGame/include/sprite_renderer.h

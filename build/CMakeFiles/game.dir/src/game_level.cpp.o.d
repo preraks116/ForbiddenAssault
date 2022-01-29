@@ -1,24 +1,14 @@
-CMakeFiles/game.dir/src/main.cpp.o: \
- /home/prerak/IIIT/cg/ass1/2DGame/src/main.cpp /usr/include/stdc-predef.h \
- /home/prerak/IIIT/cg/ass1/2DGame/libraries/glad/include/glad/glad.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h \
- /home/prerak/IIIT/cg/ass1/2DGame/libraries/glad/include/KHR/khrplatform.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdint.h \
- /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/bits/wordsize.h /usr/include/bits/long-double.h \
- /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
- /usr/include/bits/types.h /usr/include/bits/timesize.h \
- /usr/include/bits/typesizes.h /usr/include/bits/time64.h \
- /usr/include/bits/wchar.h /usr/include/bits/stdint-intn.h \
- /usr/include/bits/stdint-uintn.h /usr/include/inttypes.h \
- /home/prerak/IIIT/cg/ass1/2DGame/libraries/glfw/include/GLFW/glfw3.h \
- /home/prerak/IIIT/cg/ass1/2DGame/include/game.h \
+CMakeFiles/game.dir/src/game_level.cpp.o: \
+ /home/prerak/IIIT/cg/ass1/2DGame/src/game_level.cpp \
+ /usr/include/stdc-predef.h \
  /home/prerak/IIIT/cg/ass1/2DGame/include/game_level.h \
  /usr/include/c++/11.1.0/vector \
  /usr/include/c++/11.1.0/bits/stl_algobase.h \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/os_defines.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/bits/long-double.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/cpu_defines.h \
  /usr/include/c++/11.1.0/pstl/pstl_config.h \
  /usr/include/c++/11.1.0/bits/functexcept.h \
@@ -52,6 +42,15 @@ CMakeFiles/game.dir/src/main.cpp.o: \
  /usr/include/c++/11.1.0/bits/hash_bytes.h \
  /usr/include/c++/11.1.0/bits/range_access.h \
  /usr/include/c++/11.1.0/bits/vector.tcc \
+ /home/prerak/IIIT/cg/ass1/2DGame/libraries/glad/include/glad/glad.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h \
+ /home/prerak/IIIT/cg/ass1/2DGame/libraries/glad/include/KHR/khrplatform.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
+ /usr/include/bits/types.h /usr/include/bits/timesize.h \
+ /usr/include/bits/typesizes.h /usr/include/bits/time64.h \
+ /usr/include/bits/wchar.h /usr/include/bits/stdint-intn.h \
+ /usr/include/bits/stdint-uintn.h /usr/include/inttypes.h \
  /home/prerak/IIIT/cg/ass1/2DGame/libraries/glm/glm/glm.hpp \
  /home/prerak/IIIT/cg/ass1/2DGame/libraries/glm/glm/detail/_fixes.hpp \
  /usr/include/c++/11.1.0/cmath /usr/include/math.h \
@@ -341,10 +340,9 @@ CMakeFiles/game.dir/src/main.cpp.o: \
  /usr/include/c++/11.1.0/bits/uses_allocator.h \
  /usr/include/c++/11.1.0/bits/invoke.h \
  /usr/include/c++/11.1.0/bits/stl_multimap.h \
- /usr/include/c++/11.1.0/bits/erase_if.h \
- /home/prerak/IIIT/cg/ass1/2DGame/include/resource_manager.h \
- /usr/include/c++/11.1.0/iostream /usr/include/c++/11.1.0/ostream \
- /usr/include/c++/11.1.0/ios /usr/include/c++/11.1.0/exception \
+ /usr/include/c++/11.1.0/bits/erase_if.h /usr/include/c++/11.1.0/fstream \
+ /usr/include/c++/11.1.0/istream /usr/include/c++/11.1.0/ios \
+ /usr/include/c++/11.1.0/exception \
  /usr/include/c++/11.1.0/bits/exception_ptr.h \
  /usr/include/c++/11.1.0/bits/cxxabi_init_exception.h \
  /usr/include/c++/11.1.0/typeinfo \
@@ -365,5 +363,10 @@ CMakeFiles/game.dir/src/main.cpp.o: \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/ctype_inline.h \
  /usr/include/c++/11.1.0/bits/locale_facets.tcc \
  /usr/include/c++/11.1.0/bits/basic_ios.tcc \
- /usr/include/c++/11.1.0/bits/ostream.tcc /usr/include/c++/11.1.0/istream \
- /usr/include/c++/11.1.0/bits/istream.tcc
+ /usr/include/c++/11.1.0/ostream /usr/include/c++/11.1.0/bits/ostream.tcc \
+ /usr/include/c++/11.1.0/bits/istream.tcc \
+ /usr/include/c++/11.1.0/bits/codecvt.h \
+ /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/basic_file.h \
+ /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++io.h \
+ /usr/include/c++/11.1.0/bits/fstream.tcc /usr/include/c++/11.1.0/sstream \
+ /usr/include/c++/11.1.0/bits/sstream.tcc

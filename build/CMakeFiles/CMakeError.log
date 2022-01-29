@@ -1,22 +1,22 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/prerak/IIIT/cg/ass1/2DGame/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_35f6e/fast && /usr/bin/make  -f CMakeFiles/cmTC_35f6e.dir/build.make CMakeFiles/cmTC_35f6e.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_da37f/fast && /usr/bin/make  -f CMakeFiles/cmTC_da37f.dir/build.make CMakeFiles/cmTC_da37f.dir/build
 make[1]: Entering directory '/home/prerak/IIIT/cg/ass1/2DGame/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_35f6e.dir/src.c.o
-/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_35f6e.dir/src.c.o -c /home/prerak/IIIT/cg/ass1/2DGame/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_35f6e
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_35f6e.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_35f6e.dir/src.c.o -o cmTC_35f6e 
-/usr/bin/ld: CMakeFiles/cmTC_35f6e.dir/src.c.o: in function `main':
+Building C object CMakeFiles/cmTC_da37f.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_da37f.dir/src.c.o -c /home/prerak/IIIT/cg/ass1/2DGame/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_da37f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_da37f.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_da37f.dir/src.c.o -o cmTC_da37f 
+/usr/bin/ld: CMakeFiles/cmTC_da37f.dir/src.c.o: in function `main':
 src.c:(.text+0x3e): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x4a): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x56): undefined reference to `pthread_cancel'
 /usr/bin/ld: src.c:(.text+0x67): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_35f6e.dir/build.make:99: cmTC_35f6e] Error 1
+make[1]: *** [CMakeFiles/cmTC_da37f.dir/build.make:99: cmTC_da37f] Error 1
 make[1]: Leaving directory '/home/prerak/IIIT/cg/ass1/2DGame/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:127: cmTC_35f6e/fast] Error 2
+make: *** [Makefile:127: cmTC_da37f/fast] Error 2
 
 
 Source file was:
@@ -43,18 +43,18 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/prerak/IIIT/cg/ass1/2DGame/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_7bffd/fast && /usr/bin/make  -f CMakeFiles/cmTC_7bffd.dir/build.make CMakeFiles/cmTC_7bffd.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_7745f/fast && /usr/bin/make  -f CMakeFiles/cmTC_7745f.dir/build.make CMakeFiles/cmTC_7745f.dir/build
 make[1]: Entering directory '/home/prerak/IIIT/cg/ass1/2DGame/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7bffd.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_7bffd.dir/CheckFunctionExists.c.o -c /usr/share/cmake/Modules/CheckFunctionExists.c
-Linking C executable cmTC_7bffd
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7bffd.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_7bffd.dir/CheckFunctionExists.c.o -o cmTC_7bffd  -lpthreads 
+Building C object CMakeFiles/cmTC_7745f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_7745f.dir/CheckFunctionExists.c.o -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7745f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7745f.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_7745f.dir/CheckFunctionExists.c.o -o cmTC_7745f  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_7bffd.dir/build.make:99: cmTC_7bffd] Error 1
+make[1]: *** [CMakeFiles/cmTC_7745f.dir/build.make:99: cmTC_7745f] Error 1
 make[1]: Leaving directory '/home/prerak/IIIT/cg/ass1/2DGame/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:127: cmTC_7bffd/fast] Error 2
+make: *** [Makefile:127: cmTC_7745f/fast] Error 2
 
 
 

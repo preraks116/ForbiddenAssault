@@ -3,6 +3,7 @@
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
+#include "game_level.h"
 
 enum GameState {
     GAME_ACTIVE,
@@ -23,7 +24,9 @@ public:
     void Init();
     void ProcessInput(float dt);
     void Update(float dt);
-    void Render();
+    void Render();  
+    std::vector<GameLevel> Levels;
+    unsigned int           Level;
 };
 
 #endif

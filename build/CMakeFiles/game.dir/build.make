@@ -83,10 +83,38 @@ CMakeFiles/game.dir/src/game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/game.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prerak/IIIT/cg/ass1/2DGame/src/game.cpp -o CMakeFiles/game.dir/src/game.cpp.s
 
+CMakeFiles/game.dir/src/game_level.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/src/game_level.cpp.o: ../src/game_level.cpp
+CMakeFiles/game.dir/src/game_level.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prerak/IIIT/cg/ass1/2DGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/game.dir/src/game_level.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/game_level.cpp.o -MF CMakeFiles/game.dir/src/game_level.cpp.o.d -o CMakeFiles/game.dir/src/game_level.cpp.o -c /home/prerak/IIIT/cg/ass1/2DGame/src/game_level.cpp
+
+CMakeFiles/game.dir/src/game_level.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/src/game_level.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prerak/IIIT/cg/ass1/2DGame/src/game_level.cpp > CMakeFiles/game.dir/src/game_level.cpp.i
+
+CMakeFiles/game.dir/src/game_level.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/game_level.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prerak/IIIT/cg/ass1/2DGame/src/game_level.cpp -o CMakeFiles/game.dir/src/game_level.cpp.s
+
+CMakeFiles/game.dir/src/game_object.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/src/game_object.cpp.o: ../src/game_object.cpp
+CMakeFiles/game.dir/src/game_object.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prerak/IIIT/cg/ass1/2DGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/game.dir/src/game_object.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/game_object.cpp.o -MF CMakeFiles/game.dir/src/game_object.cpp.o.d -o CMakeFiles/game.dir/src/game_object.cpp.o -c /home/prerak/IIIT/cg/ass1/2DGame/src/game_object.cpp
+
+CMakeFiles/game.dir/src/game_object.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/src/game_object.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/prerak/IIIT/cg/ass1/2DGame/src/game_object.cpp > CMakeFiles/game.dir/src/game_object.cpp.i
+
+CMakeFiles/game.dir/src/game_object.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/game_object.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/prerak/IIIT/cg/ass1/2DGame/src/game_object.cpp -o CMakeFiles/game.dir/src/game_object.cpp.s
+
 CMakeFiles/game.dir/src/main.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/game.dir/src/main.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prerak/IIIT/cg/ass1/2DGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/game.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prerak/IIIT/cg/ass1/2DGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/game.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/main.cpp.o -MF CMakeFiles/game.dir/src/main.cpp.o.d -o CMakeFiles/game.dir/src/main.cpp.o -c /home/prerak/IIIT/cg/ass1/2DGame/src/main.cpp
 
 CMakeFiles/game.dir/src/main.cpp.i: cmake_force
@@ -100,7 +128,7 @@ CMakeFiles/game.dir/src/main.cpp.s: cmake_force
 CMakeFiles/game.dir/src/resource_manager.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/resource_manager.cpp.o: ../src/resource_manager.cpp
 CMakeFiles/game.dir/src/resource_manager.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prerak/IIIT/cg/ass1/2DGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/game.dir/src/resource_manager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prerak/IIIT/cg/ass1/2DGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/game.dir/src/resource_manager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/resource_manager.cpp.o -MF CMakeFiles/game.dir/src/resource_manager.cpp.o.d -o CMakeFiles/game.dir/src/resource_manager.cpp.o -c /home/prerak/IIIT/cg/ass1/2DGame/src/resource_manager.cpp
 
 CMakeFiles/game.dir/src/resource_manager.cpp.i: cmake_force
@@ -114,7 +142,7 @@ CMakeFiles/game.dir/src/resource_manager.cpp.s: cmake_force
 CMakeFiles/game.dir/src/shader.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/shader.cpp.o: ../src/shader.cpp
 CMakeFiles/game.dir/src/shader.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prerak/IIIT/cg/ass1/2DGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/game.dir/src/shader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prerak/IIIT/cg/ass1/2DGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/game.dir/src/shader.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/shader.cpp.o -MF CMakeFiles/game.dir/src/shader.cpp.o.d -o CMakeFiles/game.dir/src/shader.cpp.o -c /home/prerak/IIIT/cg/ass1/2DGame/src/shader.cpp
 
 CMakeFiles/game.dir/src/shader.cpp.i: cmake_force
@@ -128,7 +156,7 @@ CMakeFiles/game.dir/src/shader.cpp.s: cmake_force
 CMakeFiles/game.dir/src/sprite_renderer.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/sprite_renderer.cpp.o: ../src/sprite_renderer.cpp
 CMakeFiles/game.dir/src/sprite_renderer.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prerak/IIIT/cg/ass1/2DGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/game.dir/src/sprite_renderer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prerak/IIIT/cg/ass1/2DGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/game.dir/src/sprite_renderer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/sprite_renderer.cpp.o -MF CMakeFiles/game.dir/src/sprite_renderer.cpp.o.d -o CMakeFiles/game.dir/src/sprite_renderer.cpp.o -c /home/prerak/IIIT/cg/ass1/2DGame/src/sprite_renderer.cpp
 
 CMakeFiles/game.dir/src/sprite_renderer.cpp.i: cmake_force
@@ -142,7 +170,7 @@ CMakeFiles/game.dir/src/sprite_renderer.cpp.s: cmake_force
 CMakeFiles/game.dir/src/stb_image.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/stb_image.cpp.o: ../src/stb_image.cpp
 CMakeFiles/game.dir/src/stb_image.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prerak/IIIT/cg/ass1/2DGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/game.dir/src/stb_image.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prerak/IIIT/cg/ass1/2DGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/game.dir/src/stb_image.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/stb_image.cpp.o -MF CMakeFiles/game.dir/src/stb_image.cpp.o.d -o CMakeFiles/game.dir/src/stb_image.cpp.o -c /home/prerak/IIIT/cg/ass1/2DGame/src/stb_image.cpp
 
 CMakeFiles/game.dir/src/stb_image.cpp.i: cmake_force
@@ -156,7 +184,7 @@ CMakeFiles/game.dir/src/stb_image.cpp.s: cmake_force
 CMakeFiles/game.dir/src/texture.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/texture.cpp.o: ../src/texture.cpp
 CMakeFiles/game.dir/src/texture.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prerak/IIIT/cg/ass1/2DGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/game.dir/src/texture.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/prerak/IIIT/cg/ass1/2DGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/game.dir/src/texture.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/texture.cpp.o -MF CMakeFiles/game.dir/src/texture.cpp.o.d -o CMakeFiles/game.dir/src/texture.cpp.o -c /home/prerak/IIIT/cg/ass1/2DGame/src/texture.cpp
 
 CMakeFiles/game.dir/src/texture.cpp.i: cmake_force
@@ -170,6 +198,8 @@ CMakeFiles/game.dir/src/texture.cpp.s: cmake_force
 # Object files for target game
 game_OBJECTS = \
 "CMakeFiles/game.dir/src/game.cpp.o" \
+"CMakeFiles/game.dir/src/game_level.cpp.o" \
+"CMakeFiles/game.dir/src/game_object.cpp.o" \
 "CMakeFiles/game.dir/src/main.cpp.o" \
 "CMakeFiles/game.dir/src/resource_manager.cpp.o" \
 "CMakeFiles/game.dir/src/shader.cpp.o" \
@@ -181,6 +211,8 @@ game_OBJECTS = \
 game_EXTERNAL_OBJECTS =
 
 game: CMakeFiles/game.dir/src/game.cpp.o
+game: CMakeFiles/game.dir/src/game_level.cpp.o
+game: CMakeFiles/game.dir/src/game_object.cpp.o
 game: CMakeFiles/game.dir/src/main.cpp.o
 game: CMakeFiles/game.dir/src/resource_manager.cpp.o
 game: CMakeFiles/game.dir/src/shader.cpp.o
@@ -193,7 +225,7 @@ game: libglad.a
 game: /usr/lib/librt.so
 game: /usr/lib/libm.so
 game: CMakeFiles/game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/prerak/IIIT/cg/ass1/2DGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/prerak/IIIT/cg/ass1/2DGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

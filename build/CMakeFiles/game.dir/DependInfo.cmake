@@ -9,6 +9,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/prerak/IIIT/cg/ass1/2DGame/src/game.cpp" "CMakeFiles/game.dir/src/game.cpp.o" "gcc" "CMakeFiles/game.dir/src/game.cpp.o.d"
+  "/home/prerak/IIIT/cg/ass1/2DGame/src/game_level.cpp" "CMakeFiles/game.dir/src/game_level.cpp.o" "gcc" "CMakeFiles/game.dir/src/game_level.cpp.o.d"
+  "/home/prerak/IIIT/cg/ass1/2DGame/src/game_object.cpp" "CMakeFiles/game.dir/src/game_object.cpp.o" "gcc" "CMakeFiles/game.dir/src/game_object.cpp.o.d"
   "/home/prerak/IIIT/cg/ass1/2DGame/src/main.cpp" "CMakeFiles/game.dir/src/main.cpp.o" "gcc" "CMakeFiles/game.dir/src/main.cpp.o.d"
   "/home/prerak/IIIT/cg/ass1/2DGame/src/resource_manager.cpp" "CMakeFiles/game.dir/src/resource_manager.cpp.o" "gcc" "CMakeFiles/game.dir/src/resource_manager.cpp.o.d"
   "/home/prerak/IIIT/cg/ass1/2DGame/src/shader.cpp" "CMakeFiles/game.dir/src/shader.cpp.o" "gcc" "CMakeFiles/game.dir/src/shader.cpp.o.d"
