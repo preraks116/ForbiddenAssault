@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/prerak/IIIT/cg/ass1/2DGame/src/shader.cpp" "CMakeFiles/game.dir/src/shader.cpp.o" "gcc" "CMakeFiles/game.dir/src/shader.cpp.o.d"
   "/home/prerak/IIIT/cg/ass1/2DGame/src/sprite_renderer.cpp" "CMakeFiles/game.dir/src/sprite_renderer.cpp.o" "gcc" "CMakeFiles/game.dir/src/sprite_renderer.cpp.o.d"
   "/home/prerak/IIIT/cg/ass1/2DGame/src/stb_image.cpp" "CMakeFiles/game.dir/src/stb_image.cpp.o" "gcc" "CMakeFiles/game.dir/src/stb_image.cpp.o.d"
+  "/home/prerak/IIIT/cg/ass1/2DGame/src/text_renderer.cpp" "CMakeFiles/game.dir/src/text_renderer.cpp.o" "gcc" "CMakeFiles/game.dir/src/text_renderer.cpp.o.d"
   "/home/prerak/IIIT/cg/ass1/2DGame/src/texture.cpp" "CMakeFiles/game.dir/src/texture.cpp.o" "gcc" "CMakeFiles/game.dir/src/texture.cpp.o.d"
   )
 

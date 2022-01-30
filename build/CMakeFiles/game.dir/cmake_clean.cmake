@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/game.dir/src/sprite_renderer.cpp.o.d"
   "CMakeFiles/game.dir/src/stb_image.cpp.o"
   "CMakeFiles/game.dir/src/stb_image.cpp.o.d"
+  "CMakeFiles/game.dir/src/text_renderer.cpp.o"
+  "CMakeFiles/game.dir/src/text_renderer.cpp.o.d"
   "CMakeFiles/game.dir/src/texture.cpp.o"
   "CMakeFiles/game.dir/src/texture.cpp.o.d"
   "game"

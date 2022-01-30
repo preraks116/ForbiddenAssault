@@ -1,5 +1,6 @@
 #include "game.h"
 #include "resource_manager.h"
+#include "text_renderer.h"
 #include "sprite_renderer.h"
 #include <iostream>
 using std::cerr;
@@ -7,10 +8,13 @@ using std::endl;
 #include <fstream>
 using std::ofstream;
 #include <cstdlib> // for exit function
-
+#include <bits/stdc++.h>
 SpriteRenderer  *Renderer;
 int num[15][15]; 
+int score = 0;
+bool CheckCollision(GameObject &one, GameObject &two); // AABB - AABB collision
 
+TextRenderer  *Text;
 
 Game::Game(unsigned int width, unsigned int height) 
     : State(GAME_ACTIVE), Keys(), Width(width), Height(height)
@@ -27,9 +31,10 @@ Game::~Game()
 const glm::vec2 PLAYER_SIZE(40.0f, 40.0f);
 // Initial velocity of the player paddle
 const float PLAYER_VELOCITY(150.0f);
+const float ENEMY_VELOCITY(100.0f);
 
 GameObject      *Player;
-GameObject      *Enemy;
+// GameObject      *Enemy[5];
 
 void checkNeighbours(int x, int y)
 {
@@ -64,6 +69,7 @@ void generateLevel(std::string fileName)
     }
     outdata << endl;
     int coincount = 0;
+    int enemycount = 0;
     for (i=1; i<14; ++i)
     {
         num[i][0] = 1;
@@ -91,6 +97,11 @@ void generateLevel(std::string fileName)
             {
                 outdata << num[i][j] << " ";
                 coincount++;
+            }
+            else if(num[i][j] == 3 && enemycount < 5)
+            {
+                outdata << num[i][j] << " ";
+                enemycount++;
             }
             else
             {
@@ -123,12 +134,14 @@ void Game::Init()
     Renderer = new SpriteRenderer(ResourceManager::GetShader("sprite"));
     // load textures
     ResourceManager::LoadTexture("textures/background4.jpg", false, "background");
+    ResourceManager::LoadTexture("textures/game_over.jpg", false, "gameover");
     ResourceManager::LoadTexture("textures/awesomeface.png", true, "face");
     ResourceManager::LoadTexture("textures/block.png", false, "block");
     ResourceManager::LoadTexture("textures/block_solid.png", false, "block_solid");
     ResourceManager::LoadTexture("textures/character_0002.png", true, "paddle");
     ResourceManager::LoadTexture("textures/character_0014.png", true, "enemy");
     ResourceManager::LoadTexture("textures/tile_0151.png", true, "coin");
+
 
     //generate levels
     srand(time(0));
@@ -149,22 +162,54 @@ void Game::Init()
         this->Height - 2*PLAYER_SIZE.y - 2.0f
     );
     Player = new GameObject(playerPos, PLAYER_SIZE, ResourceManager::GetTexture("paddle"));
+    Text = new TextRenderer(this->Width, this->Height);
+    Text->Load("fonts/ocraext.TTF", 24);
 
-    glm::vec2 enemyPos = glm::vec2(
-    this->Width / 2.0f - PLAYER_SIZE.x / 2.0f, 
-    this->Height - PLAYER_SIZE.y
-    );
-    Enemy = new GameObject(enemyPos, PLAYER_SIZE, ResourceManager::GetTexture("enemy"));
 }
 
 void Game::Update(float dt)
 {
     // check for collisions
+    for (GameObject &enemy : this->Levels[this->Level].Enemy)
+    {
+        enemy.dx = 0;
+        enemy.dy = 0;
+        float velocity = ENEMY_VELOCITY * dt;
+        if(enemy.direction == 1)
+        {
+            enemy.Position.x += velocity;
+        }
+        else if(enemy.direction == 2)
+        {
+            enemy.Position.y += velocity;
+        }
+        else if(enemy.direction == -1)
+        {
+            enemy.Position.x -= velocity;
+        }
+        else if(enemy.direction == -2)
+        {
+            enemy.Position.y -= velocity;
+        }
+
+        for (GameObject &box : this->Levels[this->Level].Bricks)
+        {
+            if(!box.Destroyed)
+            {   
+                if (CheckCollision(enemy, box))
+                {
+                    enemy.direction *= -1;
+                }
+            }
+        }
+    }
     this->DoCollisions();
 }
 
 void Game::ProcessInput(float dt)
 {
+    Player->dx = 0;
+    Player->dy = 0;
     if (this->State == GAME_ACTIVE)
     {
         float velocity = PLAYER_VELOCITY * dt;
@@ -172,22 +217,34 @@ void Game::ProcessInput(float dt)
         if (this->Keys[GLFW_KEY_A])
         {
             if (Player->Position.x >= 0.0f)
+            {
                 Player->Position.x -= velocity;
+                Player->dx -= velocity;
+            }
         }
         if (this->Keys[GLFW_KEY_D])
         {
             if (Player->Position.x <= this->Width - Player->Size.x)
+            {
                 Player->Position.x += velocity;
+                Player->dx += velocity;
+            }
         }
         if (this->Keys[GLFW_KEY_W])
         {
             if (Player->Position.y >= 0.0f)
+            {
                 Player->Position.y -= velocity;
+                Player->dy -= velocity;
+            }
         }
         if (this->Keys[GLFW_KEY_S])
         {
             if (Player->Position.y <= this->Height - Player->Size.y)
+            {
                 Player->Position.y += velocity;
+                Player->dy += velocity;
+            }
         }
     }
 }
@@ -204,18 +261,28 @@ void Game::Render()
         this->Levels[this->Level].Draw(*Renderer);
         // draw player
         Player->Draw(*Renderer);
-        Enemy->Draw(*Renderer);
+
+        std::stringstream ss; 
+        ss << this->score;
+        Text->RenderText("Score:" + ss.str(), 5.0f, 5.0f, 1.0f);
+
+    }
+    else if(this->State == GAME_OVER)
+    {
+        Renderer->DrawSprite(ResourceManager::GetTexture("gameover"), 
+            glm::vec2(0.0f, 0.0f), glm::vec2(this->Width, this->Height), 0.0f
+        );
     }
 }
 
 bool CheckCollision(GameObject &one, GameObject &two) // AABB - AABB collision
 {
     // collision x-axis?
-    bool collisionX = one.Position.x + one.Size.x >= two.Position.x &&
-        two.Position.x + two.Size.x >= one.Position.x;
+    bool collisionX = one.Position.x + one.Size.x*0.8 >= two.Position.x &&
+        two.Position.x + two.Size.x*0.8 >= one.Position.x;
     // collision y-axis?
-    bool collisionY = one.Position.y + one.Size.y >= two.Position.y &&
-        two.Position.y + two.Size.y >= one.Position.y;
+    bool collisionY = one.Position.y + one.Size.y*0.9 >= two.Position.y &&
+        two.Position.y + two.Size.y*0.9 >= one.Position.y;
     // collision only if on both axes
     return collisionX && collisionY;
 }  
@@ -224,6 +291,7 @@ int count = 0;
 
 void Game::DoCollisions()
 {
+    // checking collision with player and coin or wall
     for (GameObject &box : this->Levels[this->Level].Bricks)
     {
         if (!box.Destroyed)
@@ -231,12 +299,32 @@ void Game::DoCollisions()
             if (CheckCollision(*Player, box))
             {
                 if (!box.IsSolid)
+                {
                     box.Destroyed = true;
+                    this->score += 10;
+                    std::cout << "score: " << this->score << endl;
+                }
                 else
                 {
-                    std::cout << "collision detected with wall: " << count++ << endl;
+                    // std::cout << "collision detected with wall: " << count++ << endl;
+                    // std::cout << Player->dx << " " << Player->dy << endl;
+                    Player->Position.x -= Player->dx;
+                    Player->Position.y -= Player->dy;
                 }
             }
         }
     }
+
+    // checking collision of player with enemy
+    for(GameObject &box : this->Levels[this->Level].Enemy)
+    {
+        if(CheckCollision(*Player, box))
+        {
+            // std::cout << "collision detected with enemy: " << count++ << endl;
+            this->State = GAME_OVER;
+        }
+    }
+
+
+
 }  

@@ -34,6 +34,11 @@ void GameLevel::Draw(SpriteRenderer &renderer)
     for (GameObject &tile : this->Bricks)
         if (!tile.Destroyed)
             tile.Draw(renderer);
+    for (GameObject &tile : this->Enemy)
+    {
+        if (!tile.Destroyed)
+            tile.Draw(renderer);
+    }
 }
 
 bool GameLevel::IsCompleted()
@@ -73,16 +78,13 @@ void GameLevel::init(std::vector<std::vector<unsigned int>> tileData, unsigned i
                 {
                     this->Bricks.push_back(GameObject(pos, size, ResourceManager::GetTexture("coin"), color));
                 }
-                //     color = glm::vec3(0.2f, 0.6f, 1.0f);
-                // else if (tileData[y][x] == 3)
-                //     color = glm::vec3(0.0f, 0.7f, 0.0f);
-                // else if (tileData[y][x] == 4)
-                //     color = glm::vec3(0.8f, 0.8f, 0.4f);
-                // else if (tileData[y][x] == 5)
-                //     color = glm::vec3(1.0f, 0.5f, 0.0f);
-
-                
-                
+                else if(tileData[y][x] == 3)
+                {
+                    GameObject balls(pos, size, ResourceManager::GetTexture("enemy"), color);
+                    balls.isEnemy = true;
+                    balls.direction = (rand() % 2) + 1;
+                    this->Enemy.push_back(balls);
+                }
             }
         }
     }

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DGLFW_INCLUDE_NONE
 
-CXX_INCLUDES = -I/home/prerak/IIIT/cg/ass1/2DGame/include -I/home/prerak/IIIT/cg/ass1/2DGame/libraries/glfw/include -I/home/prerak/IIIT/cg/ass1/2DGame/libraries/glad/include -I/home/prerak/IIIT/cg/ass1/2DGame/libraries/glm
+CXX_INCLUDES = -I/home/prerak/IIIT/cg/ass1/2DGame/include -I/home/prerak/IIIT/cg/ass1/2DGame/libraries/glfw/include -I/home/prerak/IIIT/cg/ass1/2DGame/libraries/glad/include -I/home/prerak/IIIT/cg/ass1/2DGame/libraries/glm -I/usr/include/freetype2
 
 CXX_FLAGS = 
 

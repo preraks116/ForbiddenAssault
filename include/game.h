@@ -8,7 +8,8 @@
 enum GameState {
     GAME_ACTIVE,
     GAME_MENU,
-    GAME_WIN
+    GAME_WIN,
+    GAME_OVER
 };
 
 class Game
@@ -17,6 +18,7 @@ public:
     GameState               State;	
     bool                    Keys[1024];
     unsigned int            Width, Height;
+    unsigned int            score;
     
     Game(unsigned int width, unsigned int height);
     ~Game();

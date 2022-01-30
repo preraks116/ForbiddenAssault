@@ -19,7 +19,11 @@ public:
     glm::vec3   Color;
     float       Rotation;
     bool        IsSolid;
+    bool        isEnemy;
+    int         direction;
     bool        Destroyed;
+    float       dx;
+    float       dy;
     // render state
     Texture2D   Sprite;	
     // constructor(s)

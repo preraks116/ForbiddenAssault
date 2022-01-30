@@ -343,6 +343,7 @@ CMakeFiles/game.dir/src/game.cpp.o: \
  /usr/include/c++/11.1.0/bits/stl_multimap.h \
  /usr/include/c++/11.1.0/bits/erase_if.h \
  /home/prerak/IIIT/cg/ass1/2DGame/include/resource_manager.h \
+ /home/prerak/IIIT/cg/ass1/2DGame/include/text_renderer.h \
  /home/prerak/IIIT/cg/ass1/2DGame/include/sprite_renderer.h \
  /usr/include/c++/11.1.0/iostream /usr/include/c++/11.1.0/ostream \
  /usr/include/c++/11.1.0/ios /usr/include/c++/11.1.0/exception \
@@ -371,4 +372,129 @@ CMakeFiles/game.dir/src/game.cpp.o: \
  /usr/include/c++/11.1.0/bits/codecvt.h \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/basic_file.h \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++io.h \
- /usr/include/c++/11.1.0/bits/fstream.tcc
+ /usr/include/c++/11.1.0/bits/fstream.tcc \
+ /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/stdc++.h \
+ /usr/include/c++/11.1.0/ciso646 /usr/include/c++/11.1.0/csetjmp \
+ /usr/include/setjmp.h /usr/include/c++/11.1.0/csignal \
+ /usr/include/signal.h /usr/include/bits/signum-generic.h \
+ /usr/include/bits/signum-arch.h /usr/include/bits/types/sig_atomic_t.h \
+ /usr/include/bits/types/siginfo_t.h /usr/include/bits/types/__sigval_t.h \
+ /usr/include/bits/siginfo-arch.h /usr/include/bits/siginfo-consts.h \
+ /usr/include/bits/siginfo-consts-arch.h \
+ /usr/include/bits/types/sigval_t.h /usr/include/bits/types/sigevent_t.h \
+ /usr/include/bits/sigevent-consts.h /usr/include/bits/sigaction.h \
+ /usr/include/bits/sigcontext.h /usr/include/bits/types/stack_t.h \
+ /usr/include/sys/ucontext.h /usr/include/bits/sigstack.h \
+ /usr/include/bits/ss_flags.h /usr/include/bits/types/struct_sigstack.h \
+ /usr/include/bits/sigthread.h /usr/include/bits/signal_ext.h \
+ /usr/include/c++/11.1.0/cstdarg /usr/include/c++/11.1.0/ctime \
+ /usr/include/c++/11.1.0/ccomplex /usr/include/c++/11.1.0/complex \
+ /usr/include/c++/11.1.0/sstream /usr/include/c++/11.1.0/bits/sstream.tcc \
+ /usr/include/c++/11.1.0/cfenv /usr/include/c++/11.1.0/fenv.h \
+ /usr/include/fenv.h /usr/include/bits/fenv.h \
+ /usr/include/c++/11.1.0/cinttypes /usr/include/c++/11.1.0/cstdalign \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdalign.h \
+ /usr/include/c++/11.1.0/cstdbool \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdbool.h \
+ /usr/include/c++/11.1.0/ctgmath /usr/include/c++/11.1.0/cuchar \
+ /usr/include/uchar.h /usr/include/c++/11.1.0/algorithm \
+ /usr/include/c++/11.1.0/bits/stl_algo.h \
+ /usr/include/c++/11.1.0/bits/algorithmfwd.h \
+ /usr/include/c++/11.1.0/bits/stl_heap.h \
+ /usr/include/c++/11.1.0/bits/stl_tempbuf.h \
+ /usr/include/c++/11.1.0/bits/uniform_int_dist.h \
+ /usr/include/c++/11.1.0/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/11.1.0/functional \
+ /usr/include/c++/11.1.0/bits/refwrap.h \
+ /usr/include/c++/11.1.0/bits/std_function.h \
+ /usr/include/c++/11.1.0/unordered_map \
+ /usr/include/c++/11.1.0/bits/hashtable.h \
+ /usr/include/c++/11.1.0/bits/hashtable_policy.h \
+ /usr/include/c++/11.1.0/bits/unordered_map.h \
+ /usr/include/c++/11.1.0/pstl/execution_defs.h \
+ /usr/include/c++/11.1.0/bitset /usr/include/c++/11.1.0/deque \
+ /usr/include/c++/11.1.0/bits/stl_deque.h \
+ /usr/include/c++/11.1.0/bits/deque.tcc /usr/include/c++/11.1.0/iomanip \
+ /usr/include/c++/11.1.0/locale \
+ /usr/include/c++/11.1.0/bits/locale_facets_nonio.h \
+ /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/time_members.h \
+ /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/messages_members.h \
+ /usr/include/libintl.h \
+ /usr/include/c++/11.1.0/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/11.1.0/bits/locale_conv.h \
+ /usr/include/c++/11.1.0/bits/unique_ptr.h \
+ /usr/include/c++/11.1.0/bits/quoted_string.h \
+ /usr/include/c++/11.1.0/iterator \
+ /usr/include/c++/11.1.0/bits/stream_iterator.h \
+ /usr/include/c++/11.1.0/list /usr/include/c++/11.1.0/bits/stl_list.h \
+ /usr/include/c++/11.1.0/bits/allocated_ptr.h \
+ /usr/include/c++/11.1.0/bits/list.tcc /usr/include/c++/11.1.0/memory \
+ /usr/include/c++/11.1.0/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/11.1.0/bits/align.h /usr/include/c++/11.1.0/bit \
+ /usr/include/c++/11.1.0/bits/shared_ptr.h \
+ /usr/include/c++/11.1.0/bits/shared_ptr_base.h \
+ /usr/include/c++/11.1.0/ext/concurrence.h \
+ /usr/include/c++/11.1.0/bits/shared_ptr_atomic.h \
+ /usr/include/c++/11.1.0/bits/atomic_base.h \
+ /usr/include/c++/11.1.0/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/11.1.0/backward/auto_ptr.h \
+ /usr/include/c++/11.1.0/pstl/glue_memory_defs.h \
+ /usr/include/c++/11.1.0/numeric \
+ /usr/include/c++/11.1.0/bits/stl_numeric.h \
+ /usr/include/c++/11.1.0/pstl/glue_numeric_defs.h \
+ /usr/include/c++/11.1.0/queue /usr/include/c++/11.1.0/bits/stl_queue.h \
+ /usr/include/c++/11.1.0/set /usr/include/c++/11.1.0/bits/stl_set.h \
+ /usr/include/c++/11.1.0/bits/stl_multiset.h \
+ /usr/include/c++/11.1.0/stack /usr/include/c++/11.1.0/bits/stl_stack.h \
+ /usr/include/c++/11.1.0/valarray \
+ /usr/include/c++/11.1.0/bits/valarray_array.h \
+ /usr/include/c++/11.1.0/bits/valarray_array.tcc \
+ /usr/include/c++/11.1.0/bits/valarray_before.h \
+ /usr/include/c++/11.1.0/bits/slice_array.h \
+ /usr/include/c++/11.1.0/bits/valarray_after.h \
+ /usr/include/c++/11.1.0/bits/gslice.h \
+ /usr/include/c++/11.1.0/bits/gslice_array.h \
+ /usr/include/c++/11.1.0/bits/mask_array.h \
+ /usr/include/c++/11.1.0/bits/indirect_array.h \
+ /usr/include/c++/11.1.0/atomic /usr/include/c++/11.1.0/chrono \
+ /usr/include/c++/11.1.0/ratio \
+ /usr/include/c++/11.1.0/bits/parse_numbers.h \
+ /usr/include/c++/11.1.0/codecvt \
+ /usr/include/c++/11.1.0/condition_variable \
+ /usr/include/c++/11.1.0/bits/std_mutex.h \
+ /usr/include/c++/11.1.0/bits/unique_lock.h \
+ /usr/include/c++/11.1.0/forward_list \
+ /usr/include/c++/11.1.0/bits/forward_list.h \
+ /usr/include/c++/11.1.0/bits/forward_list.tcc \
+ /usr/include/c++/11.1.0/future /usr/include/c++/11.1.0/mutex \
+ /usr/include/c++/11.1.0/bits/atomic_futex.h \
+ /usr/include/c++/11.1.0/bits/std_thread.h /usr/include/c++/11.1.0/random \
+ /usr/include/c++/11.1.0/bits/random.h \
+ /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/opt_random.h \
+ /usr/include/c++/11.1.0/bits/random.tcc /usr/include/c++/11.1.0/regex \
+ /usr/include/c++/11.1.0/bits/regex_constants.h \
+ /usr/include/c++/11.1.0/bits/regex_error.h \
+ /usr/include/c++/11.1.0/bits/regex_automaton.h \
+ /usr/include/c++/11.1.0/bits/regex_automaton.tcc \
+ /usr/include/c++/11.1.0/bits/regex_scanner.h \
+ /usr/include/c++/11.1.0/bits/regex_scanner.tcc \
+ /usr/include/c++/11.1.0/bits/regex_compiler.h \
+ /usr/include/c++/11.1.0/bits/regex_compiler.tcc \
+ /usr/include/c++/11.1.0/bits/regex.h \
+ /usr/include/c++/11.1.0/bits/regex.tcc \
+ /usr/include/c++/11.1.0/bits/regex_executor.h \
+ /usr/include/c++/11.1.0/bits/regex_executor.tcc \
+ /usr/include/c++/11.1.0/scoped_allocator /usr/include/c++/11.1.0/thread \
+ /usr/include/c++/11.1.0/bits/this_thread_sleep.h \
+ /usr/include/c++/11.1.0/typeindex /usr/include/c++/11.1.0/unordered_set \
+ /usr/include/c++/11.1.0/bits/unordered_set.h \
+ /usr/include/c++/11.1.0/shared_mutex /usr/include/c++/11.1.0/any \
+ /usr/include/c++/11.1.0/charconv /usr/include/c++/11.1.0/filesystem \
+ /usr/include/c++/11.1.0/bits/fs_fwd.h \
+ /usr/include/c++/11.1.0/bits/fs_path.h \
+ /usr/include/c++/11.1.0/bits/fs_dir.h \
+ /usr/include/c++/11.1.0/bits/fs_ops.h /usr/include/c++/11.1.0/optional \
+ /usr/include/c++/11.1.0/bits/enable_special_members.h \
+ /usr/include/c++/11.1.0/memory_resource \
+ /usr/include/c++/11.1.0/bits/uses_allocator_args.h \
+ /usr/include/c++/11.1.0/variant
