@@ -343,4 +343,32 @@ CMakeFiles/game.dir/src/game.cpp.o: \
  /usr/include/c++/11.1.0/bits/stl_multimap.h \
  /usr/include/c++/11.1.0/bits/erase_if.h \
  /home/prerak/IIIT/cg/ass1/2DGame/include/resource_manager.h \
- /home/prerak/IIIT/cg/ass1/2DGame/include/sprite_renderer.h
+ /home/prerak/IIIT/cg/ass1/2DGame/include/sprite_renderer.h \
+ /usr/include/c++/11.1.0/iostream /usr/include/c++/11.1.0/ostream \
+ /usr/include/c++/11.1.0/ios /usr/include/c++/11.1.0/exception \
+ /usr/include/c++/11.1.0/bits/exception_ptr.h \
+ /usr/include/c++/11.1.0/bits/cxxabi_init_exception.h \
+ /usr/include/c++/11.1.0/typeinfo \
+ /usr/include/c++/11.1.0/bits/nested_exception.h \
+ /usr/include/c++/11.1.0/bits/ios_base.h \
+ /usr/include/c++/11.1.0/bits/locale_classes.h \
+ /usr/include/c++/11.1.0/bits/locale_classes.tcc \
+ /usr/include/c++/11.1.0/system_error \
+ /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/error_constants.h \
+ /usr/include/c++/11.1.0/stdexcept /usr/include/c++/11.1.0/streambuf \
+ /usr/include/c++/11.1.0/bits/streambuf.tcc \
+ /usr/include/c++/11.1.0/bits/basic_ios.h \
+ /usr/include/c++/11.1.0/bits/locale_facets.h \
+ /usr/include/c++/11.1.0/cwctype /usr/include/wctype.h \
+ /usr/include/bits/wctype-wchar.h \
+ /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/ctype_base.h \
+ /usr/include/c++/11.1.0/bits/streambuf_iterator.h \
+ /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/ctype_inline.h \
+ /usr/include/c++/11.1.0/bits/locale_facets.tcc \
+ /usr/include/c++/11.1.0/bits/basic_ios.tcc \
+ /usr/include/c++/11.1.0/bits/ostream.tcc /usr/include/c++/11.1.0/istream \
+ /usr/include/c++/11.1.0/bits/istream.tcc /usr/include/c++/11.1.0/fstream \
+ /usr/include/c++/11.1.0/bits/codecvt.h \
+ /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/basic_file.h \
+ /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++io.h \
+ /usr/include/c++/11.1.0/bits/fstream.tcc

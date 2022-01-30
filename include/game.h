@@ -23,6 +23,7 @@ public:
 
     void Init();
     void ProcessInput(float dt);
+    void DoCollisions();
     void Update(float dt);
     void Render();  
     std::vector<GameLevel> Levels;

@@ -1,1 +1,1 @@
-rm -rf build && mkdir build && cd build && cmake .. && make && cd .. && build/game
+cd build && make && cd .. && build/game
