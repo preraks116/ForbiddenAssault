@@ -75,6 +75,9 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
 {
     if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
         glfwSetWindowShouldClose(window, true);
+
+    if (key == GLFW_KEY_SPACE && action == GLFW_PRESS)
+        Escape.LightOff = !Escape.LightOff;
     
     if (key >= 0 && key < 1024)
     {

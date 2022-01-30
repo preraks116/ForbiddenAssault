@@ -17,7 +17,7 @@ bool CheckCollision(GameObject &one, GameObject &two); // AABB - AABB collision
 TextRenderer *Text;
 
 Game::Game(unsigned int width, unsigned int height)
-    : State(GAME_ACTIVE), Keys(), Width(width), Height(height)
+    : State(GAME_ACTIVE), Keys(), Width(width), Height(height), LightOff(0)
 {
 }
 
@@ -136,7 +136,8 @@ void Game::Init()
                                       static_cast<float>(this->Height), 0.0f, -1.0f, 1.0f);
     ResourceManager::GetShader("sprite").Use().SetInteger("image", 0);
     ResourceManager::GetShader("sprite").SetMatrix4("projection", projection);
-    // set render-specific controls
+    ResourceManager::GetShader("sprite").Use().SetInteger("LightOff", LightOff);
+    // set render-specific control
     Renderer = new SpriteRenderer(ResourceManager::GetShader("sprite"));
     // load textures
     ResourceManager::LoadTexture("textures/background4.jpg", false, "background");
@@ -182,6 +183,8 @@ void Game::Update(float dt)
     if (this->State == GAME_ACTIVE)
     {
         // check for collisions
+        ResourceManager::GetShader("sprite").Use().SetInteger("LightOff", this->LightOff);
+        ResourceManager::GetShader("sprite").Use().SetVector2f("PlayerPos", Player->Position);
         for (GameObject &enemy : this->Levels[this->Level].Enemy)
         {
             enemy.dx = 0;
@@ -295,6 +298,7 @@ void Game::Render()
     }
     else if (this->State == GAME_OVER)
     {
+        LightOff = 0;
         Renderer->DrawSprite(ResourceManager::GetTexture("gameover"),
                              glm::vec2(0.0f, 0.0f), glm::vec2(this->Width, this->Height), 0.0f);
         std::stringstream sa;
@@ -306,6 +310,7 @@ void Game::Render()
     }
     else if (this->State == GAME_WIN)
     {
+        LightOff = 0;
         Renderer->DrawSprite(ResourceManager::GetTexture("background"),
             glm::vec2(0.0f, 0.0f), glm::vec2(this->Width, this->Height), 0.0f
         );
@@ -345,6 +350,10 @@ void Game::DoCollisions()
                 if (!box.IsSolid)
                 {
                     box.Destroyed = true;
+                    if(LightOff == 1)
+                    {
+                        this->score += 10;
+                    }
                     this->score += 10;
                     // std::cout << "score: " << this->score << endl;
                 }

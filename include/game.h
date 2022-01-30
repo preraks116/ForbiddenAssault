@@ -31,6 +31,7 @@ public:
     void Render();  
     std::vector<GameLevel> Levels;
     unsigned int           Level;
+    int                    LightOff;
 };
 
 #endif
