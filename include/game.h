@@ -19,6 +19,7 @@ public:
     bool                    Keys[1024];
     unsigned int            Width, Height;
     unsigned int            score;
+    unsigned int            gameTime;
     
     Game(unsigned int width, unsigned int height);
     ~Game();
